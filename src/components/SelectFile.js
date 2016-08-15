@@ -10,7 +10,7 @@ export default class SelectFile extends Component {
 				<span>your file anywhere, or&nbsp;</span>
 				<span className='link'>
 					<div>browse</div>
-					<input ref={node=>this.input = node} type='file' />
+					<input ref={node=>this.input = node} type='file' onChange={this.onChange.bind(this)}/>
 				</span>
 			</div>
 		</div>)
