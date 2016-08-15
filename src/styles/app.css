@@ -1,0 +1,106 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, Arial;
+    color: #fff;
+    padding: 75px 55px;
+    background-color: #3c9ae7;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #FFF;
+}
+
+.upload {
+    height: 200px;
+}
+
+.success button, .error button {
+    margin-top: 40px;
+    border: none;
+    background-color: #2b7dbf;
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 17px;
+    cursor: pointer;
+}
+
+.success button:hover, .error button:hover{
+    background-color: #266fab;
+    outline: none;
+}
+
+header {
+    display:flex;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    margin: 20px 50px;
+}
+
+.files-list{
+    position: relative;
+}
+
+.files-list li {
+    padding: 5px;
+}
+
+.files-list header i {
+    margin-right: 10px;
+}
+
+.drag-and-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 36px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border: 2px dashed #fff;
+}
+
+.select-file {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.select-file .caption {
+    font-size: 54px;
+}
+
+.select-file input {
+    opacity: 0;
+    width: 50px;
+    position: absolute;
+}
+
+.select-file .link{
+    display: inline-flex;
+    color: #9b59b6;
+}
